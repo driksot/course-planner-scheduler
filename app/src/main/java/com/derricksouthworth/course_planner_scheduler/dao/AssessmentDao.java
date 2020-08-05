@@ -1,4 +1,4 @@
-package com.derricksouthworth.course_planner_scheduler.database;
+package com.derricksouthworth.course_planner_scheduler.dao;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
@@ -7,7 +7,7 @@ import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
 
-import com.derricksouthworth.course_planner_scheduler.models.Assessment;
+import com.derricksouthworth.course_planner_scheduler.entities.Assessment;
 
 import java.util.List;
 

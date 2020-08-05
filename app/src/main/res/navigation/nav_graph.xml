@@ -7,7 +7,11 @@
 
     <activity
         android:id="@+id/mainActivity"
-        android:name="com.derricksouthworth.course_planner_scheduler.MainActivity"
+        android:name="com.derricksouthworth.course_planner_scheduler.activities.StudentInfoActivity"
         android:label="activity_main"
-        tools:layout="@layout/activity_main" />
+        tools:layout="@layout/activity_student_info" />
+    <activity
+        android:id="@+id/termActivity"
+        android:name="com.derricksouthworth.course_planner_scheduler.activities.TermActivity"
+        android:label="TermActivity" />
 </navigation>

@@ -1,4 +1,4 @@
-package com.derricksouthworth.course_planner_scheduler.database;
+package com.derricksouthworth.course_planner_scheduler.dao;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
@@ -7,7 +7,7 @@ import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
 
-import com.derricksouthworth.course_planner_scheduler.models.Course;
+import com.derricksouthworth.course_planner_scheduler.entities.Course;
 
 import java.util.List;
 
@@ -28,4 +28,7 @@ public interface CourseDao {
 
     @Query("SELECT * FROM course_table")
     LiveData<List<Course>> getAllCourses();
+
+    @Query("SELECT * FROM course_table WHERE course_id = :courseId ORDER BY course_id")
+    Course getCourse(int courseId);
 }
